@@ -1,0 +1,16 @@
+name: 'Amazon ECS "Find Tasks with Tags" Action for GitHub Actions'
+description: 'Finds tasks that have tags assigned'
+inputs:
+  cluster:
+    description: "The short name or full Amazon Resource Name (ARN) of the cluster that hosts the task to stop. If you do not specify a cluster, the default cluster is assumed."
+    required: false
+    default: 'default'
+  tags:
+    description: "The tags (key:value, comma seperated) to search for on tasks"
+    required: true
+outputs:
+  task-arns:
+    description: 'The ARNs (comma seperated) of the tasks that have the given tags assigned'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

@@ -1,0 +1,28 @@
+{
+  "name": "amazon-ecs-find-tasks-with-tags",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "package": "ncc build index.js -o dist",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dave-irvine/amazon-ecs-find-tasks-with-tags.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dave-irvine/amazon-ecs-find-tasks-with-tags/issues"
+  },
+  "homepage": "https://github.com/dave-irvine/amazon-ecs-find-tasks-with-tags#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "aws-sdk": "^2.799.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.25.1"
+  }
+}
