@@ -76,6 +76,8 @@ async function run() {
             tagsMap[key] = value;
         });
 
+        core.debug(`Looking for tasks with tags: ${tagsMap}`);
+
         try {
             const taskArns = await listAllTasks(ecs, cluster);
             core.debug(`Found tasks: ${taskArns}`);
